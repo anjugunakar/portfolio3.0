@@ -490,7 +490,8 @@ input,button,textarea{
     border-bottom: 1px solid var(--dark-color);
     padding: .5rem;
 }
-.input input:focus + .input-label{
+.input input:focus + .input-label,
+.input input:not(:focus):valid ~ .input-label{
     transform: translateY(-2.5rem);
 }
 .form-button{
